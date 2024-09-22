@@ -1,0 +1,25 @@
+[project]
+name = "gcode-geom"
+version = "0.1.0"
+description = "Convert between Gcode and geometry"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+	"Geometry3D ==0.2.4",
+	"fastcore ==1.5.29",
+	"more_itertools ==10.2.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.ruff]
+[tool.ruff.lint]
+ignore = [
+	"E101",   #Mixed spaces & tabs
+	"E501",   #Too-long lines
+	"E701",   #Multiple statements on a line
+	"E741",   #Ambiguous variable names
+]

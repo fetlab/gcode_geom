@@ -1,0 +1,65 @@
+version = 1
+requires-python = ">=3.12"
+
+[[package]]
+name = "fastcore"
+version = "1.5.29"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "packaging" },
+    { name = "pip" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1f/62/bb0d880d3a9306a6a042ab41ea61b082f8d2c378019f8b3d37693b9a0b44/fastcore-1.5.29.tar.gz", hash = "sha256:f1a2eb04eb7933f3f9eb4064852817df44dc96e20fab5658c14c035815269a3f", size = 64816 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/39/b8/3059245adb5e4421222aab3852ac7f47d68eba82c8c62b88928ec1c69431/fastcore-1.5.29-py3-none-any.whl", hash = "sha256:a7d7e89faf968f2d8584df2deca344c3974f6cf476e1299cd3c067d8fa7440e9", size = 67593 },
+]
+
+[[package]]
+name = "gcode-geom"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "fastcore" },
+    { name = "geometry3d" },
+    { name = "more-itertools" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "fastcore", specifier = "==1.5.29" },
+    { name = "geometry3d", specifier = "==0.2.4" },
+    { name = "more-itertools", specifier = "==10.2.0" },
+]
+
+[[package]]
+name = "geometry3d"
+version = "0.2.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d8/ca/614f29371ced3393210847f68a62806cf90c6a4886cbf08b745260911c2c/Geometry3D-0.2.4.tar.gz", hash = "sha256:883234c24367289729e2bce0560797747fa0a3a40e39c8b72d49e449ca90fba8", size = 24482 }
+
+[[package]]
+name = "more-itertools"
+version = "10.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/df/ad/7905a7fd46ffb61d976133a4f47799388209e73cbc8c1253593335da88b4/more-itertools-10.2.0.tar.gz", hash = "sha256:8fccb480c43d3e99a00087634c06dd02b0d50fbf088b380de5a41a015ec239e1", size = 114449 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/50/e2/8e10e465ee3987bb7c9ab69efb91d867d93959095f4807db102d07995d94/more_itertools-10.2.0-py3-none-any.whl", hash = "sha256:686b06abe565edfab151cb8fd385a05651e1fdf8f0a14191e4439283421f8684", size = 57015 },
+]
+
+[[package]]
+name = "packaging"
+version = "24.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/51/65/50db4dda066951078f0a96cf12f4b9ada6e4b811516bf0262c0f4f7064d4/packaging-24.1.tar.gz", hash = "sha256:026ed72c8ed3fcce5bf8950572258698927fd1dbda10a5e981cdf0ac37f4f002", size = 148788 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/08/aa/cc0199a5f0ad350994d660967a8efb233fe0416e4639146c089643407ce6/packaging-24.1-py3-none-any.whl", hash = "sha256:5b8f2217dbdbd2f7f384c41c628544e6d52f2d0f53c6d0c3ea61aa5d1d7ff124", size = 53985 },
+]
+
+[[package]]
+name = "pip"
+version = "24.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/4d/87/fb90046e096a03aeab235e139436b3fe804cdd447ed2093b0d70eba3f7f8/pip-24.2.tar.gz", hash = "sha256:5b5e490b5e9cb275c879595064adce9ebd31b854e3e803740b72f9ccf34a45b8", size = 1922041 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d4/55/90db48d85f7689ec6f81c0db0622d704306c5284850383c090e6c7195a5c/pip-24.2-py3-none-any.whl", hash = "sha256:2cd581cf58ab7fcfca4ce8efa6dcacd0de5bf8d0a3eb9ec927e07405f4d9e2a2", size = 1815170 },
+]
