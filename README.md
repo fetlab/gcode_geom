@@ -1,6 +1,6 @@
 # gcode-geom
 
-This is a library that offers tools for converting between Gcode and geometry. The following classes are available; please check their source for more detail:
+This is a library, built on top of [Geometry3D](https://github.com/GouMinghao/Geometry3D), that offers tools for converting between Gcode and geometry. The following classes are available; please check their source for more detail:
 
 * `Angle`: an angle type to avoid confusion between radians and degrees.
 * `GPoint`: a point in space. Can be instantiated from a line of Gcode.
