@@ -1,7 +1,7 @@
 from typing import Collection
 from itertools import pairwise
 from fastcore.basics import first
-from .utils import Number
+from . import Number
 from .gpoint   import GPoint
 from .gsegment import GSegment
 

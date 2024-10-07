@@ -11,9 +11,6 @@ if TYPE_CHECKING:
 	from .gsegment import GSegment
 	from .ghalfline import GHalfLine
 
-#Create Number type
-Number = float|int
-
 eps = get_eps()
 
 def sign(n):

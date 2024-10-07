@@ -3,7 +3,7 @@ from copy import copy
 from Geometry3D import Point, Vector
 from fastcore.basics import listify
 from .angle import Angle, atan2
-from .utils import Number
+from . import Number
 
 class GPoint(Point):
 	def __init__(self, *args, **kwargs):

@@ -4,6 +4,9 @@ import Geometry3D
 Geometry3D.geometry.point.unify_types = lambda x: x
 Geometry3D.utils.vector.unify_types   = lambda x: x
 
+#Create Number type
+Number = float|int
+
 from .gpoint import GPoint
 from .gsegment import GSegment, list2gsegments
 from .ghalfline import GHalfLine
