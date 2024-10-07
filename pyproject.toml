@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Convert between Gcode and geometry"
 readme = "README.md"
 requires-python = ">=3.10"
-d2pendencies = [
+dependencies = [
 	"Geometry3D ==0.2.4",
 	"fastcore ==1.5.29",
 	"more_itertools ==10.2.0",
